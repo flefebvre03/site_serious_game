@@ -2,7 +2,7 @@
 <html lang="fr">
 <head>
 	    <link rel="stylesheet" type="text/css" href="style.css">
-		<title>Ma mise en page</title>
+		<title>Site web sur les Serious Game</title>
 		<meta charset="UTF-8" >
 	</head>
 	<body>
@@ -10,7 +10,7 @@
 			<header id = "accueil">	
 				<h1>Le site de Florian Lefebvre en M1</h1>	
 				<h2>Les Serious Game, principes et applications</h2> 
-				<img src = "seriousgame.jpg" alt = "logo de serious game" width="50" height = "30">
+				<img src = "img/logo.png" alt = "logo de serious game" width="50" height = "30">
 			</header>
 			<nav>
 				<p><a href="index.php">Accueil</a></p>
@@ -30,6 +30,7 @@
 					<li><a href="index.php?page=informations/objectif.html">Objectifs du site</a></li>
 					<li><a href="index.php?page=informations/qui_suis_je.html">Qui suis-je ?</a></li>
 					<li><a href="index.php?page=informations/mes_projets.html">Mes projets</a></li>
+					<li><a href="informations/projet_rust.pdf">Un serious game en L2 </a></li>
 					<!--<li><a href="informations/cv.html" target="_blank">Mon CV</a></li>-->
 					<!--<li><a href="informations/cv.html" target="_blank" onclick="window.open(this.href,'mon CV','width=700,height=600,left=(screen.width-700)/2,top=(screen.height-600)/2'); return false;">Mon CV</a></li>-->
 

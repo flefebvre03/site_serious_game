@@ -1,0 +1,59 @@
+/* Style général */
+body {
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+}
+
+/* Masquer les éléments non essentiels à l'impression */
+header, footer, nav, aside {
+    display: none;
+}
+
+/* Style du contenu principal */
+article {
+    margin: 0;
+    padding: 0;
+}
+
+/* Style des liens pour l'impression */
+a {
+    color: #000;
+    text-decoration: underline;
+}
+
+/* Rétablir les styles par défaut pour les liens visités */
+a:visited {
+    color: #800080;
+}
+
+/* Style spécifique pour l'impression */
+@media print {
+    /* Masquer les liens pour l'impression */
+    a {
+        text-decoration: none;
+    }
+
+    /* Mettre en surbrillance les liens lorsqu'ils sont imprimés */
+    a::after {
+        content: " (" attr(href) ")";
+    }
+
+    /* Supprimer les bordures des tableaux pour l'impression */
+    table {
+        border-collapse: collapse;
+        border: none;
+        width: 100%;
+    }
+
+    /* Ajouter une bordure aux cellules des tableaux pour l'impression */
+    td, th {
+        border: 1px solid #ddd;
+        padding: 8px;
+        text-align: left;
+    }
+
+    /* Rétablir les styles par défaut pour les liens visités lors de l'impression */
+    a:visited::after {
+        content: " (" attr(href) " - visité)";
+    }
+}

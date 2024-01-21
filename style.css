@@ -77,11 +77,25 @@
 			.lien-transition:hover {
   			color: #2980b9;
 			}
+			.centrage {
+				display: flex;
+				justify-content: center;
+			}
 			.element {
   				width: 200px;
   				height: 200px;
   				background-image: linear-gradient(to right, red, blue);
 			}
+			
+	
+			.image_centree {
+				display:block;
+				margin:1rem auto;
+				width:280px;
+				height:200px;
+			}
+				
+			
 /**** Mise en page Responsive ****/
 @media (max-width: 640px) {
 	/* Mise en page en flexible */
